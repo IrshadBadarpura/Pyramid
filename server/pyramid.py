@@ -12,11 +12,11 @@ for items in sys.argv[1] :
         diction[items] += 1
     else:
         diction[items] = 1
-sum1 = sum(diction.values())
+# sum1 = sum(diction.values())
 
-newset = set(diction)
-d = len(diction)
-s = len(newset)
+# newset = set(diction)
+# d = len(diction)
+# s = len(newset)
 
 for i in range(1,len(diction)+1):
     if i not in diction.values():
