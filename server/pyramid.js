@@ -9,7 +9,9 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 const port = 3000
 const server = http.createServer(app)
-server.listen(3000)
+server.listen(3000, ()=>{
+    console.log("Server running on port : 3000");
+})
 app.get('/',(req,res)=>{
     res.send("Hello")
 })
